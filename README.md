@@ -1,6 +1,8 @@
 # Oil-Seep
 Exercise to detect oil seeps from SAR images
 
+oil_seep.ipynb file contains the code used to preprocess the dataset, split data, build and train the model and evaluation of the model. The code is written in Python, using Keras for deep learning libraries.
+
 The dataset is accessed through google drive, where it was uploaded. 
 Images are divided into train, validation and test sets in the ratio 8:1:1
 
@@ -19,4 +21,6 @@ DICE COEFFICIENT - The dice coefficient is like F1 score for image segmentation 
 Dice Coefficient = 2* (Area of Overlap / Total Number of Pixels in both images)
 
 The value ranges from 0 to 1, 0 for no overlap and 1 for perfect overlap.
+
+model-fcnn.h5 is the final model saved with best weights obtained on training. It can be loaded and tested using keras.models.load_model
 
